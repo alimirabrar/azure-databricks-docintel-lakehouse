@@ -1,0 +1,39 @@
+{
+  "doc_type": "invoice",
+  "document_number": "10011",
+  "vendor_name": "Northwind Components LLP",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-07-17",
+  "due_date": "2026-08-31",
+  "po_number": "PO-50857",
+  "currency": "USD",
+  "subtotal": "10645.00",
+  "tax": "851.60",
+  "total": "11496.60",
+  "line_items": [
+    {
+      "description": "Pallet wrap film",
+      "quantity": "2",
+      "unit_price": "410.00",
+      "amount": "820.00"
+    },
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "5",
+      "unit_price": "95.00",
+      "amount": "475.00"
+    },
+    {
+      "description": "LED panel light 36W",
+      "quantity": "5",
+      "unit_price": "1180.00",
+      "amount": "5900.00"
+    },
+    {
+      "description": "Industrial adhesive 5L",
+      "quantity": "2",
+      "unit_price": "1725.00",
+      "amount": "3450.00"
+    }
+  ]
+}

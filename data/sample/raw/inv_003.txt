@@ -1,0 +1,16 @@
+Invoice
+Seller: Cont0so Packaging Ltd
+Buyer: Sample Foods Ltd
+Invoice Number INV/26/0003
+Issue date 17/04/2026
+Due 17/05/2026
+Order ref. PO-70217
+
+Items:
+- 20 x Safety gloves (pair) @ EUR 95.00 = EUR 1,900.00
+- 25 x Pallet wrap film @ EUR 410.00 = EUR 10,250.00
+- 4 x Printer toner cartridge @ EUR 3,299.00 = EUR 13,196.00
+
+Net amount: EUR 25,346.00
+VAT l9%: EUR 4,815.74
+Amount payable: EUR 30,161.74

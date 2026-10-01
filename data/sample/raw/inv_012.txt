@@ -1,0 +1,14 @@
+Invoice
+Seller: Deccan Industrial Supplies Pvt Ltd
+Buyer: Sample Foods Ltd
+Invoice Number INV/26/0012
+Issue date 04/06/2026
+Due 19/07/2026
+Order ref. PO-13905
+
+Items:
+- 1 x Corrugated boxes 40x30 @ EUR 38.00 = EUR 38.00
+
+Net amount: EUR 38.00
+VAT 19%: EUR 7.22
+Amount payable: EUR 45.22

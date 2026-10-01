@@ -1,0 +1,16 @@
+PURCHASE ORDER
+PO Number: PO-13905
+Order Date: 2026-04-23
+Deliver By: 2026-04-30
+Buyer: Sample Foods Ltd
+Supplier: Deccan Industrial Supplies Pvt Ltd
+Currency: INR
+
+# Item | Qty | Unit Price | Amount
+1. Safety gloves (pair) | 50 | 95.00 | 4,750.00
+2. Corrugated boxes 40x30 | 100 | 38.00 | 3,800.00
+
+Subtotal: 8,550.00
+Tax (18%): 1,539.00
+Order Total: 10,089.00
+Authorised signatory: Procurement Desk

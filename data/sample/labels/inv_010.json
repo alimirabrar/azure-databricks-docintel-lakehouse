@@ -1,0 +1,27 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV-2026-0010",
+  "vendor_name": "Contoso Packaging Ltd",
+  "buyer_name": "Lakeview Retail Group Pvt Ltd",
+  "issue_date": "2026-07-20",
+  "due_date": "2026-08-04",
+  "po_number": "PO-54118",
+  "currency": "INR",
+  "subtotal": "183980.00",
+  "tax": "33116.40",
+  "total": "217096.40",
+  "line_items": [
+    {
+      "description": "LED panel light 36W",
+      "quantity": "100",
+      "unit_price": "1180.00",
+      "amount": "118000.00"
+    },
+    {
+      "description": "Printer toner cartridge",
+      "quantity": "20",
+      "unit_price": "3299.00",
+      "amount": "65980.00"
+    }
+  ]
+}

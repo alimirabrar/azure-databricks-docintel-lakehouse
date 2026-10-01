@@ -1,0 +1,39 @@
+{
+  "doc_type": "invoice",
+  "document_number": "10002",
+  "vendor_name": "Contoso Packaging Ltd",
+  "buyer_name": "Lakeview Retail Group Pvt Ltd",
+  "issue_date": "2026-05-21",
+  "due_date": "2026-07-05",
+  "po_number": "PO-54118",
+  "currency": "USD",
+  "subtotal": "29040.00",
+  "tax": "2323.20",
+  "total": "31363.20",
+  "line_items": [
+    {
+      "description": "LED panel light 36W",
+      "quantity": "5",
+      "unit_price": "1180.00",
+      "amount": "5900.00"
+    },
+    {
+      "description": "Pallet wrap film",
+      "quantity": "12",
+      "unit_price": "410.00",
+      "amount": "4920.00"
+    },
+    {
+      "description": "Industrial adhesive 5L",
+      "quantity": "1",
+      "unit_price": "1725.00",
+      "amount": "1725.00"
+    },
+    {
+      "description": "Printer toner cartridge",
+      "quantity": "5",
+      "unit_price": "3299.00",
+      "amount": "16495.00"
+    }
+  ]
+}

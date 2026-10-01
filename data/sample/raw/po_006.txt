@@ -1,0 +1,16 @@
+PURCHASE ORDER
+PO Number: PO-96673
+Order Date: 2026-01-22
+Deliver By: 2026-01-29
+Buyer: Sample Foods Ltd
+Supplier: Northwind Components LLP
+Currency: INR
+
+# Item | Qty | Unit Price | Amount
+1. LED panel light 36W | 5 | 1,180.00 | 5,900.00
+2. Steel bolts M8 | 2 | 12.50 | 25.00
+
+Subtotal: 5,925.00
+Tax (18%): 1,066.50
+Order Total: 6,991.50
+Authorised signatory: Procurement Desk

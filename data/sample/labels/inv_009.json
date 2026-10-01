@@ -1,0 +1,21 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV/26/0009",
+  "vendor_name": "Deccan Industrial Supplies Pvt Ltd",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-04-07",
+  "due_date": "2026-05-07",
+  "po_number": "PO-13905",
+  "currency": "EUR",
+  "subtotal": "950.00",
+  "tax": "180.50",
+  "total": "1130.50",
+  "line_items": [
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "25",
+      "unit_price": "38.00",
+      "amount": "950.00"
+    }
+  ]
+}

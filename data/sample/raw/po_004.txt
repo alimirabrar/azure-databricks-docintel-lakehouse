@@ -1,0 +1,16 @@
+PURCHASE ORDER
+PO Number: PO-54118
+Order Date: 2026-02-13
+Deliver By: 2026-02-20
+Buyer: Lakeview Retail Group Pvt Ltd
+Supplier: Contoso Packaging Ltd
+Currency: INR
+
+# Item | Qty | Unit Price | Amount
+1. Corrugated boxes 40x30 | 2 | 38.00 | 76.00
+2. Safety gloves (pair) | 12 | 95.00 | 1,140.00
+
+Subtotal: 1,216.00
+Tax (18%); 218.88
+Order Total: 1,434.88
+Authorised signatory; Procurement Desk

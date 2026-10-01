@@ -1,0 +1,24 @@
+{
+  "source": "synthetic-ocr",
+  "pages": [
+    {
+      "page": 1,
+      "lines": [
+        "MASTER SERVICES AGREEMENT",
+        "Agreement No.: MSA-2026-002",
+        "This Agreement is entered into on 1 May 2026",
+        "between Example Manufacturing Co (\"Client\") and Golconda Logistics Pvt Ltd (\"Service Provider\")",
+        "for the provision of facility management services."
+      ]
+    },
+    {
+      "page": 2,
+      "lines": [
+        "Term: This Agreement remains in force until 30 April 2027.",
+        "Total Contract Value: INR 24,00,000.00",
+        "Payment Terms: monthly in arrears, net 30 days.",
+        "Governing law: as agreed between the parties."
+      ]
+    }
+  ]
+}

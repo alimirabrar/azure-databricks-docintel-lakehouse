@@ -1,0 +1,21 @@
+TAX INVOICE
+Fabrikam Electricals Pvt Ltd
+Plot 14, Industrial Area Phase 2
+
+Invoice No: INV-2026-0001
+Invoice Date: 2026-05-01
+Due Date: 2026-06-15
+PO Reference: PO-31319
+
+Bill To:
+Lakeview Retail Group Pvt Ltd
+
+Description | Qty | Unit Price | Amount
+Pallet wrap film | 10 | 410.00 | 4,100.00
+Corrugated boxes 40x30 | 2 | 38.00 | 76.00
+Printer toner cartridge | 100 | 3,299.00 | 329,900.00
+
+Subtotal: INR 334,076.00
+GST (18%): INR 60,133.68
+Total Due: INR 394,209.68
+Amount in words: see total above.

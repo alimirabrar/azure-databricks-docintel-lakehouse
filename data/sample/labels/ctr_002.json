@@ -1,0 +1,14 @@
+{
+  "doc_type": "contract",
+  "document_number": "MSA-2026-002",
+  "vendor_name": "Golconda Logistics Pvt Ltd",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-05-01",
+  "due_date": "2027-04-30",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": null,
+  "tax": null,
+  "total": "2400000.00",
+  "line_items": []
+}

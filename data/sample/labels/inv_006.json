@@ -1,0 +1,21 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV/26/0006",
+  "vendor_name": "Golconda Logistics Pvt Ltd",
+  "buyer_name": "Lakeview Retail Group Pvt Ltd",
+  "issue_date": "2026-05-20",
+  "due_date": "2026-06-19",
+  "po_number": "PO-11504",
+  "currency": "EUR",
+  "subtotal": "14160.00",
+  "tax": "2690.40",
+  "total": "16850.40",
+  "line_items": [
+    {
+      "description": "LED panel light 36W",
+      "quantity": "12",
+      "unit_price": "1180.00",
+      "amount": "14160.00"
+    }
+  ]
+}

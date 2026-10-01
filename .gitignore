@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local pipeline outputs
+output/
+mlruns/
+mlflow.db
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Databricks / Terraform / Bicep
+.databricks/
+infra/*.json
+.env
+*.env
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

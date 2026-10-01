@@ -1,0 +1,14 @@
+Invoice
+Seller: Deccan Industrial Supplies Pvt Ltd
+Buyer: Sample Fo0ds Ltd
+Invoice Number INV/26/0009
+Issue date 07/04/2026
+Due 07/05/2026
+Order ref. PO-13905
+
+Items:
+- 25 x C0rrugated boxes 40x30 @ EUR 38.00 = EUR 950.00
+
+Net amount: EUR 950.00
+VAT 19%: EUR 180.50
+Amount payable: EUR 1,130.50

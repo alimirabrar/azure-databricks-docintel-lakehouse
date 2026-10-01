@@ -1,0 +1,33 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV-2026-0001",
+  "vendor_name": "Fabrikam Electricals Pvt Ltd",
+  "buyer_name": "Lakeview Retail Group Pvt Ltd",
+  "issue_date": "2026-05-01",
+  "due_date": "2026-06-15",
+  "po_number": "PO-31319",
+  "currency": "INR",
+  "subtotal": "334076.00",
+  "tax": "60133.68",
+  "total": "394209.68",
+  "line_items": [
+    {
+      "description": "Pallet wrap film",
+      "quantity": "10",
+      "unit_price": "410.00",
+      "amount": "4100.00"
+    },
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "2",
+      "unit_price": "38.00",
+      "amount": "76.00"
+    },
+    {
+      "description": "Printer toner cartridge",
+      "quantity": "100",
+      "unit_price": "3299.00",
+      "amount": "329900.00"
+    }
+  ]
+}

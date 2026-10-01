@@ -1,0 +1,18 @@
+PURCHASE ORDER
+PO Number: PO-70217
+Order Date: 2026-03-13
+Deliver By: 2026-03-20
+Buyer: Sample Fo0ds Ltd
+Supplier: Contoso Packaging Ltd
+Currency: INR
+
+# Item | Qty | Unit Price | Amount
+1. Corrugated boxes 40x30 | 10 | 38.00 | 38O.00
+2. Safety gloves (pair) | 100 | 95.O0 | 9,500.00
+3. Steel bolts M8 | 12 | 12.50 | 150.00
+4. LED panel light 36W | 100 | 1,180.00 | 118,000.00
+
+Subtotal: 128,030.0O
+Tax (18%): 23,045.40
+Order Total: 151,075.40
+Authorised signatory: Procurement Desk

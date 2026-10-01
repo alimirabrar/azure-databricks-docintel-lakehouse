@@ -1,0 +1,39 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV-2026-0004",
+  "vendor_name": "Contoso Packaging Ltd",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-03-09",
+  "due_date": "2026-04-23",
+  "po_number": "PO-44438",
+  "currency": "INR",
+  "subtotal": "147986.00",
+  "tax": "26637.48",
+  "total": "174623.48",
+  "line_items": [
+    {
+      "description": "Industrial adhesive 5L",
+      "quantity": "50",
+      "unit_price": "1725.00",
+      "amount": "86250.00"
+    },
+    {
+      "description": "Copper cable 2.5mm (100m)",
+      "quantity": "25",
+      "unit_price": "2450.00",
+      "amount": "61250.00"
+    },
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "2",
+      "unit_price": "38.00",
+      "amount": "76.00"
+    },
+    {
+      "description": "Pallet wrap film",
+      "quantity": "1",
+      "unit_price": "410.00",
+      "amount": "410.00"
+    }
+  ]
+}

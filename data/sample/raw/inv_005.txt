@@ -1,0 +1,17 @@
+Deccan Industrial Supplies Pvt Ltd
+1200 Harbor Way, Suite 300
+INVOICE
+
+Invoice #; 10005
+Date: June 14, 2026
+Payment Due: June 29, 2026
+Customer: Example Manufacturing Co
+Your PO: PO-65333
+
+ITEM                            QTY         RATE     LINE TOTAL
+Industrial adhesive 5L           20   $  1,725.00   $ 34,500.O0
+
+Sub-total      $34,500.00
+Sales Tax      $2,760.00
+TOTAL          $37,260.00 USD
+Thank you for your business!

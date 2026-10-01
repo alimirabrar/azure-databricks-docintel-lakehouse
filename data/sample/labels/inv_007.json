@@ -1,0 +1,33 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV-2026-0007",
+  "vendor_name": "Northwind Components LLP",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-04-26",
+  "due_date": "2026-05-11",
+  "po_number": "PO-96673",
+  "currency": "INR",
+  "subtotal": "84750.00",
+  "tax": "15255.00",
+  "total": "100005.00",
+  "line_items": [
+    {
+      "description": "Copper cable 2.5mm (100m)",
+      "quantity": "10",
+      "unit_price": "2450.00",
+      "amount": "24500.00"
+    },
+    {
+      "description": "LED panel light 36W",
+      "quantity": "50",
+      "unit_price": "1180.00",
+      "amount": "59000.00"
+    },
+    {
+      "description": "Steel bolts M8",
+      "quantity": "100",
+      "unit_price": "12.50",
+      "amount": "1250.00"
+    }
+  ]
+}

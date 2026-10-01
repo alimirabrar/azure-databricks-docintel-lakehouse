@@ -1,0 +1,27 @@
+{
+  "doc_type": "purchase_order",
+  "document_number": "PO-13905",
+  "vendor_name": "Deccan Industrial Supplies Pvt Ltd",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-04-23",
+  "due_date": "2026-04-30",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": "8550.00",
+  "tax": "1539.00",
+  "total": "10089.00",
+  "line_items": [
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "50",
+      "unit_price": "95.00",
+      "amount": "4750.00"
+    },
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "100",
+      "unit_price": "38.00",
+      "amount": "3800.00"
+    }
+  ]
+}

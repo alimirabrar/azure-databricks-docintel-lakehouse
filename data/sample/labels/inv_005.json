@@ -1,0 +1,21 @@
+{
+  "doc_type": "invoice",
+  "document_number": "10005",
+  "vendor_name": "Deccan Industrial Supplies Pvt Ltd",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-06-14",
+  "due_date": "2026-06-29",
+  "po_number": "PO-65333",
+  "currency": "USD",
+  "subtotal": "34500.00",
+  "tax": "2760.00",
+  "total": "37260.00",
+  "line_items": [
+    {
+      "description": "Industrial adhesive 5L",
+      "quantity": "20",
+      "unit_price": "1725.00",
+      "amount": "34500.00"
+    }
+  ]
+}

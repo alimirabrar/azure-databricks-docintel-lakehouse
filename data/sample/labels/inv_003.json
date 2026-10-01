@@ -1,0 +1,33 @@
+{
+  "doc_type": "invoice",
+  "document_number": "INV/26/0003",
+  "vendor_name": "Contoso Packaging Ltd",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-04-17",
+  "due_date": "2026-05-17",
+  "po_number": "PO-70217",
+  "currency": "EUR",
+  "subtotal": "25346.00",
+  "tax": "4815.74",
+  "total": "30161.74",
+  "line_items": [
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "20",
+      "unit_price": "95.00",
+      "amount": "1900.00"
+    },
+    {
+      "description": "Pallet wrap film",
+      "quantity": "25",
+      "unit_price": "410.00",
+      "amount": "10250.00"
+    },
+    {
+      "description": "Printer toner cartridge",
+      "quantity": "4",
+      "unit_price": "3299.00",
+      "amount": "13196.00"
+    }
+  ]
+}

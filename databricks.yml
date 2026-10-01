@@ -1,0 +1,62 @@
+# Databricks Asset Bundle: builds the docintel wheel and deploys the medallion job.
+#   databricks bundle validate
+#   databricks bundle deploy -t dev
+#   databricks bundle run docintel_medallion -t dev
+bundle:
+  name: docintel-lakehouse
+
+include:
+  - resources/*.yml
+
+artifacts:
+  docintel_wheel:
+    type: whl
+    build: python -m pip wheel --no-deps -w dist .
+    path: .
+
+variables:
+  catalog:
+    description: Unity Catalog catalog for the medallion tables
+    default: main
+  schema:
+    description: Schema (database) for the medallion tables
+    default: docintel
+  landing_path:
+    description: Where raw documents land (UC volume or abfss:// path)
+    default: /Volumes/main/docintel/landing/raw
+  labels_path:
+    description: Labeled evaluation sample (one JSON per doc_id)
+    default: /Volumes/main/docintel/landing/labels
+  llm_client:
+    description: rule_based (offline baseline) or azure_openai
+    default: rule_based
+  prompt_version:
+    default: v2
+  azure_openai_endpoint:
+    description: https://<name>.openai.azure.com (infra output openAiEndpoint)
+    default: ""
+  azure_openai_deployment:
+    default: gpt-4o-mini
+  secret_scope:
+    description: Databricks secret scope holding the key 'azure-openai-api-key'
+    default: docintel
+  node_type:
+    default: Standard_D4ds_v5
+
+targets:
+  dev:
+    mode: development
+    default: true
+  prod:
+    mode: production
+    variables:
+      llm_client: azure_openai
+    resources:
+      jobs:
+        docintel_medallion:
+          job_clusters:
+            - job_cluster_key: docintel
+              new_cluster:
+                spark_env_vars:
+                  # Secret reference: create the scope/key before deploying to prod.
+                  AZURE_OPENAI_API_KEY: "{{secrets/${var.secret_scope}/azure-openai-api-key}}"

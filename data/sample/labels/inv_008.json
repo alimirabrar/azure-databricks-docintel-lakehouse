@@ -1,0 +1,21 @@
+{
+  "doc_type": "invoice",
+  "document_number": "10008",
+  "vendor_name": "Northwind Components LLP",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-04-10",
+  "due_date": "2026-04-25",
+  "po_number": "PO-79514",
+  "currency": "USD",
+  "subtotal": "10250.00",
+  "tax": "820.00",
+  "total": "11070.00",
+  "line_items": [
+    {
+      "description": "Pallet wrap film",
+      "quantity": "25",
+      "unit_price": "410.00",
+      "amount": "10250.00"
+    }
+  ]
+}

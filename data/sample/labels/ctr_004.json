@@ -1,0 +1,14 @@
+{
+  "doc_type": "contract",
+  "document_number": "MSA-2026-004",
+  "vendor_name": "Fabrikam Electricals Pvt Ltd",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-02-01",
+  "due_date": "2027-01-31",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": null,
+  "tax": null,
+  "total": "480000.00",
+  "line_items": []
+}

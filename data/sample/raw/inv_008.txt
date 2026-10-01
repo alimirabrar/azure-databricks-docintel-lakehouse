@@ -1,0 +1,17 @@
+Northwind Components LLP
+1200 Harbor Way, Suite 300
+INVOICE
+
+Invoice #: 10008
+Date: April 10, 2026
+Payment Due: April 25, 2026
+Customer: Example Manufacturing Co
+Your PO: PO-79514
+
+ITEM                            QTY         RATE     LINE TOTAL
+Pallet wrap film                 25   $    410.00   $ 10,250.00
+
+Sub-total      $10,250.00
+Sales Tax      $820.00
+TOTAL          $11,070.00 USD
+Thank you for your business!

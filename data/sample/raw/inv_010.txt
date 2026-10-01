@@ -1,0 +1,20 @@
+TAX INVOICE
+Contoso Packaging Ltd
+Plot 14, Industrial Area Phase 2
+
+Invoice No: INV-2026-0010
+Invoice Date: 2026-07-20
+Due Date: 2026-08-04
+PO Reference: PO-54118
+
+Bill To:
+Lakeview Retail Group Pvt Ltd
+
+Description | Qty | Unit Price | Amount
+LED panel light 36W | 100 | 1,180.00 | 118,000.00
+Printer toner cartridge | 20 | 3,299.00 | 65,980.00
+
+Subtotal: INR 183,980.00
+GST (18%): INR 33,116.40
+Total Due: INR 217,096.40
+Amount in words: see total above.

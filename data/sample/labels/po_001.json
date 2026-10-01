@@ -1,0 +1,27 @@
+{
+  "doc_type": "purchase_order",
+  "document_number": "PO-46048",
+  "vendor_name": "Tailspin Office Solutions LLC",
+  "buyer_name": "Example Manufacturing Co",
+  "issue_date": "2026-01-11",
+  "due_date": "2026-02-01",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": "2090.00",
+  "tax": "376.20",
+  "total": "2466.20",
+  "line_items": [
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "2",
+      "unit_price": "95.00",
+      "amount": "190.00"
+    },
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "50",
+      "unit_price": "38.00",
+      "amount": "1900.00"
+    }
+  ]
+}

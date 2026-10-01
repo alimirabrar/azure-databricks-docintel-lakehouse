@@ -1,0 +1,27 @@
+{
+  "doc_type": "purchase_order",
+  "document_number": "PO-96673",
+  "vendor_name": "Northwind Components LLP",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-01-22",
+  "due_date": "2026-01-29",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": "5925.00",
+  "tax": "1066.50",
+  "total": "6991.50",
+  "line_items": [
+    {
+      "description": "LED panel light 36W",
+      "quantity": "5",
+      "unit_price": "1180.00",
+      "amount": "5900.00"
+    },
+    {
+      "description": "Steel bolts M8",
+      "quantity": "2",
+      "unit_price": "12.50",
+      "amount": "25.00"
+    }
+  ]
+}

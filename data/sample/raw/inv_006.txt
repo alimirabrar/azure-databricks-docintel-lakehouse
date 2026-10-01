@@ -1,0 +1,14 @@
+Invoice
+Seller: G0lconda Logistics Pvt Ltd
+Buyer: Lakeview Retail Group Pvt Ltd
+Invoice Number INV/26/00O6
+Issue date 20/05/2026
+Due 19/06/2026
+Order ref. PO-1l504
+
+Items:
+- 12 x LED panel light 36W @ EUR 1,180.00 = EUR 14,160.00
+
+Net amount: EUR 14,160.00
+VAT 19%: EUR 2,690.40
+Am0unt payable: EUR 16,850.40

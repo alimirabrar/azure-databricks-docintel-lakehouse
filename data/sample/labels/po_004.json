@@ -1,0 +1,27 @@
+{
+  "doc_type": "purchase_order",
+  "document_number": "PO-54118",
+  "vendor_name": "Contoso Packaging Ltd",
+  "buyer_name": "Lakeview Retail Group Pvt Ltd",
+  "issue_date": "2026-02-13",
+  "due_date": "2026-02-20",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": "1216.00",
+  "tax": "218.88",
+  "total": "1434.88",
+  "line_items": [
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "2",
+      "unit_price": "38.00",
+      "amount": "76.00"
+    },
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "12",
+      "unit_price": "95.00",
+      "amount": "1140.00"
+    }
+  ]
+}

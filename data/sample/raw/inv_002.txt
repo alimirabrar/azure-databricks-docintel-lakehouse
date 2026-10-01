@@ -1,0 +1,20 @@
+Contoso Packaging Ltd
+1200 Harbor Way, Suite 300
+INVOICE
+
+Invoice #: 10002
+Date: May 21, 2026
+Payment Due: July 5, 2026
+Customer: Lakeview Retail Group Pvt Ltd
+Your PO: PO-54118
+
+ITEM                            QTY         RATE     LINE TOTAL
+LED panel light 36W               5   $  1,180.00   $  5,900.00
+Pallet wrap film                 12   $    410.00   $  4,920.00
+Industrial adhesive 5L            1   $  1,725.00   $  1,725.00
+Printer toner cartridge           5   $  3,299.00   $ 16,495.00
+
+Sub-total      $29,040.00
+Sales Tax      $2,323.20
+TOTAL          $31,363.20 USD
+Thank you for your business!

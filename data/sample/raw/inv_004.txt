@@ -1,0 +1,22 @@
+TAX INVOICE
+Contoso Packaging Ltd
+Plot 14, Industrial Area Phase 2
+
+Invoice No: INV-2026-0004
+Invoice Date: 2026-03-09
+Due Date: 2026-04-23
+PO Reference: PO-44438
+
+Bill To:
+Example Manufacturing Co
+
+Description | Qty | Unit Price | Amount
+Industrial adhesive 5L | 50 | 1,725.00 | 86,250.00
+Copper cable 2.5mm (100m) | 25 | 2,450.00 | 61,250.00
+Corrugated boxes 40x30 | 2 | 38.00 | 76.00
+Pallet wrap film | 1 | 410.00 | 410.00
+
+Subtotal: INR 147,986.00
+GST (18%): INR 26,637.48
+Total Due: INR 174,623.48
+Amount in words: see total above.

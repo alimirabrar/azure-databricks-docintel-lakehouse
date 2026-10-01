@@ -1,0 +1,39 @@
+{
+  "doc_type": "purchase_order",
+  "document_number": "PO-95181",
+  "vendor_name": "Deccan Industrial Supplies Pvt Ltd",
+  "buyer_name": "Sample Foods Ltd",
+  "issue_date": "2026-02-24",
+  "due_date": "2026-03-17",
+  "po_number": null,
+  "currency": "INR",
+  "subtotal": "41268.00",
+  "tax": "7428.24",
+  "total": "48696.24",
+  "line_items": [
+    {
+      "description": "Industrial adhesive 5L",
+      "quantity": "10",
+      "unit_price": "1725.00",
+      "amount": "17250.00"
+    },
+    {
+      "description": "Corrugated boxes 40x30",
+      "quantity": "1",
+      "unit_price": "38.00",
+      "amount": "38.00"
+    },
+    {
+      "description": "Safety gloves (pair)",
+      "quantity": "4",
+      "unit_price": "95.00",
+      "amount": "380.00"
+    },
+    {
+      "description": "LED panel light 36W",
+      "quantity": "20",
+      "unit_price": "1180.00",
+      "amount": "23600.00"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Northwind Components LLP
+1200 Harbor Way, Suite 300
+INVOICE
+
+Invoice #: 10011
+Date: July 17, 2026
+Payment Due: August 31, 2026
+Customer: Sample Foods Ltd
+Your PO: PO-50857
+
+ITEM                            QTY         RATE     LINE TOTAL
+Pallet wrap film                  2   $    410.00   $    820.00
+Safety gloves (pair)              5   $     95.00   $    475.00
+LED panel light 36W               5   $  1,180.00   $  5,900.00
+Industrial adhesive 5L            2   $  1,725.00   $  3,450.00
+
+Sub-total      $10,645.00
+Sales Tax      $851.60
+TOTAL          $11,496.60 USD
+Thank you for your business!

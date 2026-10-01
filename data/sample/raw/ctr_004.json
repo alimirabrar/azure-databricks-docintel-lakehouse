@@ -1,0 +1,24 @@
+{
+  "source": "synthetic-ocr",
+  "pages": [
+    {
+      "page": 1,
+      "lines": [
+        "MASTER SERVICES AGREEMENT",
+        "Agreement No.: MSA-2026-004",
+        "This Agreement is entered into on 1 February 2026",
+        "between Example Manufacturing Co (\"Client\") and Fabrikam Electricals Pvt Ltd (\"Service Provider\")",
+        "for the provision of IT support and maintenance services."
+      ]
+    },
+    {
+      "page": 2,
+      "lines": [
+        "Term: This Agreement remains in force until 31 January 2027.",
+        "Total Contract Value: INR 4,80,000.00",
+        "Payment Terms: monthly in arrears, net 30 days.",
+        "Governing law: as agreed between the parties."
+      ]
+    }
+  ]
+}

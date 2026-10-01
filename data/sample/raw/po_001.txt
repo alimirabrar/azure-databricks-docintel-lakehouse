@@ -1,0 +1,16 @@
+PURCHASE ORDER
+PO Number: PO-46048
+Order Date: 2026-01-11
+Deliver By: 2026-02-01
+Buyer: Example Manufacturing Co
+Supplier: Tailspin Office Solutions LLC
+Currency: INR
+
+# Item | Qty | Unit Price | Amount
+1. Safety gloves (pair) | 2 | 95.00 | 190.00
+2. Corrugated boxes 40x30 | 50 | 38.00 | 1,900.00
+
+Subtotal: 2,090.00
+Tax (18%): 376.20
+Order Total: 2,466.20
+Authorised signatory: Procurement Desk

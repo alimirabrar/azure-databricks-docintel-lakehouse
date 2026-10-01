@@ -1,0 +1,21 @@
+TAX INVOICE
+Northwind Components LLP
+Plot 14, Industrial Area Phase 2
+
+Invoice No: INV-2026-0007
+Invoice Date: 2026-04-26
+Due Date: 2026-05-11
+PO Reference: PO-96673
+
+Bill To:
+Sample Foods Ltd
+
+Description | Qty | Unit Price | Amount
+Copper cable 2.5mm (100m) | 10 | 2,450.00 | 24,500.00
+LED panel light 36W | 50 | 1,180.00 | 59,000.00
+Steel bolts M8 | 100 | 12.50 | 1,250.00
+
+Subtotal: INR 84,750.00
+GST (18%): INR 15,255.00
+Total Due: INR 100,005.00
+Amount in words: see total above.
