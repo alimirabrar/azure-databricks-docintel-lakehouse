@@ -75,9 +75,11 @@ A **medallion lakehouse** where the LLM is one replaceable step inside a governe
   `consistency_issues()` flags `subtotal + tax ≠ total`, line-item sum mismatches,
   `qty × price ≠ amount`, due dates before issue dates and missing vendors.
 - **Versioned prompts** (`v1`, `v2`) stored on each silver row and logged to MLflow as artifacts.
-- **Evaluation done properly.** A wrong value counts as both an FP and an FN. Hallucinated
-  values count as FPs. Line items are matched as a multiset. Invalid records count as
-  empty predictions. Results include per-document error lists.
+- **Evaluation done properly.** A wrong scalar value counts as both an FP and an FN. Hallucinated
+  values count as FPs. Line items are matched as a multiset over description, quantity, unit price,
+  and amount. Exact-document match requires all scalar fields and the complete line-item multiset;
+  invalid records count as empty predictions. Results include per-document error lists. See the
+  [metric definitions](docs/evaluation-metrics.md).
 - **PySpark transforms as plain, testable functions** (`to_bronze`, `to_silver`,
   `vendor_spend`, ...). The same code runs in Databricks notebooks and in local pytest.
 - **Ready for Databricks:** an Asset Bundle with a 4-task job (bronze → silver → gold ‖ eval)
@@ -141,7 +143,7 @@ git clone https://github.com/alimirabrar/azure-databricks-docintel-lakehouse.git
 cd azure-databricks-docintel-lakehouse
 python -m venv .venv && source .venv/bin/activate
 make install        # pip install -e ".[local,dev,pdf]"
-make test           # 36 tests, PySpark local mode
+make test           # 41 tests, PySpark local mode
 make run            # bronze -> silver -> gold (Parquet in output/lakehouse) + eval + MLflow
 make mlflow-ui      # browse runs at http://127.0.0.1:5000
 ```
@@ -191,6 +193,7 @@ databricks bundle deploy -t prod --var azure_openai_endpoint=https://<name>.open
 │   ├── tracking.py           # MLflow logging (params, metrics, prompt + per-doc artifacts)
 │   ├── runner.py · cli.py    # `docintel generate | run`
 │   └── data_gen.py           # deterministic synthetic documents + labels
+├── docs/evaluation-metrics.md # scoring rules and benchmark interpretation
 ├── notebooks/                # Databricks source notebooks: _setup, 01 bronze, 02 silver, 03 gold, 04 eval
 ├── databricks.yml            # Asset Bundle (wheel artifact, variables, dev/prod targets)
 ├── resources/docintel_job.yml# 4-task job on a DBR 15.4 LTS job cluster

@@ -27,6 +27,53 @@ def test_perfect_prediction():
     assert rep.n_exact == 1
 
 
+def test_document_exact_match_includes_line_items():
+    predicted_item = dict(LABEL["line_items"][0], amount="99.00")
+    rep = evaluate({"d1": dict(LABEL, line_items=[predicted_item])}, {"d1": LABEL})
+
+    assert rep.micro.f1 == 1.0
+    assert rep.line_items.f1 == 0.0
+    assert rep.n_exact == 0
+    assert rep.per_doc[0]["wrong_fields"] == ["line_items"]
+
+
+def test_document_exact_match_is_line_item_order_insensitive():
+    first = LABEL["line_items"][0]
+    second = {"description": "Tape", "quantity": "1", "amount": "5.00", "unit_price": "5"}
+    labels = dict(LABEL, line_items=[first, second])
+    predictions = dict(LABEL, line_items=[second, first])
+
+    rep = evaluate({"d1": predictions}, {"d1": labels})
+
+    assert rep.line_items.f1 == 1.0
+    assert rep.n_exact == 1
+
+
+def test_line_item_exact_match_includes_unit_price():
+    predicted_item = dict(LABEL["line_items"][0], unit_price="49.99")
+    rep = evaluate({"d1": dict(LABEL, line_items=[predicted_item])}, {"d1": LABEL})
+
+    assert rep.line_items.f1 == 0.0
+    assert rep.n_exact == 0
+    assert rep.per_doc[0]["wrong_fields"] == ["line_items"]
+
+
+def test_line_item_quantity_keeps_full_decimal_precision():
+    predicted_item = dict(LABEL["line_items"][0], quantity="2.004")
+    rep = evaluate({"d1": dict(LABEL, line_items=[predicted_item])}, {"d1": LABEL})
+
+    assert rep.line_items.f1 == 0.0
+    assert rep.n_exact == 0
+
+
+def test_empty_prediction_object_is_consistently_marked_present():
+    rep = evaluate({"d1": {}}, {"d1": LABEL})
+
+    assert rep.n_valid == 1
+    assert rep.per_doc[0]["valid"] is True
+    assert rep.n_exact == 0
+
+
 def test_wrong_value_costs_precision_and_recall():
     pred = dict(LABEL, total="999.00", vendor_name="contoso   LTD", buyer_name="Someone")
     rep = evaluate({"d1": pred}, {"d1": LABEL})
@@ -53,8 +100,8 @@ def test_money_normalization_and_line_items():
         LABEL,
         total="118",
         line_items=[
-            {"description": "box", "quantity": "2.0", "amount": "100"},
-            {"description": "Extra", "quantity": "1", "amount": "5"},
+            {"description": "box", "quantity": "2.0", "unit_price": "50", "amount": "100"},
+            {"description": "Extra", "quantity": "1", "unit_price": "5", "amount": "5"},
         ],
     )
     rep = evaluate({"d1": pred}, {"d1": LABEL})

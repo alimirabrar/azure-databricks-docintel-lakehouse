@@ -30,9 +30,14 @@ _DATE_FIELDS = {"issue_date", "due_date"}
 def _norm(fieldname: str, value: Any) -> Any:
     if value is None or value == "":
         return None
-    if fieldname in _MONEY_FIELDS or fieldname in {"quantity", "amount", "unit_price"}:
+    if fieldname in _MONEY_FIELDS or fieldname in {"amount", "unit_price"}:
         try:
             return Decimal(str(value).replace(",", "")).quantize(Decimal("0.01"))
+        except InvalidOperation:
+            return str(value)
+    if fieldname == "quantity":
+        try:
+            return Decimal(str(value).replace(",", ""))
         except InvalidOperation:
             return str(value)
     if fieldname in _DATE_FIELDS:
@@ -44,6 +49,7 @@ def _item_key(item: dict[str, Any]) -> tuple[Any, ...]:
     return (
         _norm("description", item.get("description")),
         _norm("quantity", item.get("quantity")),
+        _norm("unit_price", item.get("unit_price")),
         _norm("amount", item.get("amount")),
     )
 
@@ -146,10 +152,10 @@ def evaluate(
     n_valid = n_exact = 0
     per_doc = []
     for doc_id, label in sorted(labels.items()):
-        pred = predictions.get(doc_id)
-        if pred is not None:
-            n_valid += 1
-        pred = pred or {}
+        raw_pred = predictions.get(doc_id)
+        valid = raw_pred is not None
+        n_valid += int(valid)
+        pred = raw_pred or {}
         wrong = []
         for f in SCALAR_FIELDS:
             lv, pv = _norm(f, label.get(f)), _norm(f, pred.get(f))
@@ -168,11 +174,11 @@ def evaluate(
         items.tp += tp
         items.fp += sum(pc.values()) - tp
         items.fn += sum(lc.values()) - tp
+        if lc != pc:
+            wrong.append("line_items")
         if not wrong:
             n_exact += 1
-        per_doc.append(
-            {"doc_id": doc_id, "valid": bool(predictions.get(doc_id)), "wrong_fields": wrong}
-        )
+        per_doc.append({"doc_id": doc_id, "valid": valid, "wrong_fields": wrong})
     return EvalReport(scores, items, len(labels), n_valid, n_exact, per_doc)
 
 
